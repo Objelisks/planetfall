@@ -12,7 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "regl": "^2.0.1"
+    "bicubic-interpolate": "^1.0.4",
+    "file-loader": "^6.2.0",
+    "gl-matrix": "^3.3.0",
+    "glslify-hex": "^2.1.1",
+    "noisejs": "^2.1.0",
+    "normals": "^1.1.0",
+    "perspective-camera": "^2.0.1",
+    "regl": "^2.0.1",
+    "resl": "^1.0.3"
   },
   "devDependencies": {
     "@webpack-cli/init": "^1.1.1",

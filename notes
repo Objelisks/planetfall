@@ -1,0 +1,48 @@
+major systems:
+    terrain
+    grid
+    city
+    unit
+        pathfinding
+    improvements
+    tech tree
+    diplomacy
+    computer player
+    fog of war
+
+map layers:
+    height
+    rockiness
+    rainfall
+
+    improvements
+    eco-damage
+
+shaders:
+    metallic/roughness + subsurface scattering
+        https://www.shadertoy.com/view/lllBDM
+    water
+    clouds
+
+
+
+map shader
+
+1:
+    separate draw calls for each layer
+    shader just has texture for that layer
+    can probably use the same shader for each layer
+        draw water
+        draw dirt
+        draw veg
+        draw rock
+        draw fungus
+    
+    write depth using parallax shader to get correct heights
+
+2:
+    one shader that draws everything
+    uses heightmap to switch
+    lots of looping
+        draw water
+        draw terrain

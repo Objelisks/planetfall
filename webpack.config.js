@@ -27,6 +27,11 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+        type: 'asset/resource'
+        //        use: 'file-loader?name=./images/[name].[ext]'
       }
     ]
   }
